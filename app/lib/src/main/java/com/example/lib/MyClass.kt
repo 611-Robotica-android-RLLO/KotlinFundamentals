@@ -1,8 +1,6 @@
 package com.example.lib
 
-fun main() {jion
-    njljnljk}
-
+fun main() {
 //    //Variables INMUTABLES
 //    val name : String = "Hila"
 //
