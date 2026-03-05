@@ -1,0 +1,25 @@
+class Persona(val nombre: String, val edad: Int, val ciudad: String) {
+
+    fun saludar() {
+        println("Hola soy $nombre y tengo $edad años, soy de $ciudad")
+    }
+    fun esMayorDeEdad () : Boolean {
+        var mayorEdad : Boolean
+        if (edad >= 18) {
+            mayorEdad = true
+        } else {
+            mayorEdad = false
+        }
+        println("$nombre es mayor de edad: $mayorEdad")
+        return mayorEdad
+    }
+}
+
+fun main() {
+    val persona1 = Persona("Ana", 20, "Guadalajara")
+    val persona2 = Persona("Luis", 15, "Leon")
+    persona1.saludar()
+    persona1.esMayorDeEdad()
+    persona2.saludar()
+    persona2.esMayorDeEdad()
+}
